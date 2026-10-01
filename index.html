@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>AG PREMIUM</title>
+
+  <meta name="theme-color" content="#07110d">
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div>
+        <div class="brand">AG PREMIUM</div>
+        <div class="subtitle">Premium Utility Hub</div>
+      </div>
+
+      <div class="status-dot"></div>
+    </header>
+
+    <!-- Welcome -->
+    <section class="welcome-card">
+      <div class="welcome-small">WELCOME TO</div>
+      <h1>AG PREMIUM</h1>
+      <p>Useful tools, rewards and exclusive features in one place.</p>
+
+      <button onclick="openSection('rewards')">
+        🎁 Explore Rewards
+      </button>
+    </section>
+
+    <!-- User -->
+    <section class="user-card">
+      <div class="avatar" id="avatar">A</div>
+
+      <div class="user-info">
+        <div class="user-name" id="userName">AG PREMIUM USER</div>
+        <div class="user-id" id="userId">Telegram User</div>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="section">
+      <div class="section-title">Quick Access</div>
+
+      <div class="grid">
+
+        <button class="feature-card" onclick="openSection('profile')">
+          <span>👤</span>
+          <strong>Profile</strong>
+          <small>Your account</small>
+        </button>
+
+        <button class="feature-card" onclick="openSection('rewards')">
+          <span>🎁</span>
+          <strong>Rewards</strong>
+          <small>Daily rewards</small>
+        </button>
+
+        <button class="feature-card" onclick="openSection('tasks')">
+          <span>🎯</span>
+          <strong>Tasks</strong>
+          <small>Available tasks</small>
+        </button>
+
+        <button class="feature-card" onclick="openSection('premium')">
+          <span>💎</span>
+          <strong>Premium</strong>
+          <small>Exclusive access</small>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Announcement -->
+    <section class="announcement">
+      <div class="announcement-icon">📢</div>
+
+      <div>
+        <strong>AG PREMIUM Updates</strong>
+        <p>New features and special offers will appear here.</p>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+
+      <button class="nav-item active" onclick="openSection('home')">
+        <span>🏠</span>
+        <small>Home</small>
+      </button>
+
+      <button class="nav-item" onclick="openSection('tasks')">
+        <span>🎯</span>
+        <small>Tasks</small>
+      </button>
+
+      <button class="nav-item" onclick="openSection('rewards')">
+        <span>🎁</span>
+        <small>Rewards</small>
+      </button>
+
+      <button class="nav-item" onclick="openSection('profile')">
+        <span>👤</span>
+        <small>Profile</small>
+      </button>
+
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
